@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="How MoodShift Analytics accesses, stores, uses, and deletes YouTube channel data in its personal local workflow.">
+<meta name="theme-color" content="#0e5554">
+<title>Privacy Policy — MoodShift Analytics</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230e5554'/%3E%3Cpath d='M17 39V29m15 17V18m15 21V25' stroke='%23c9eee5' stroke-width='6' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+:root{color-scheme:light;--ink:#173b3b;--muted:#506564;--teal:#0e5554;--line:#d4e4de;--paper:#f5f8f4}*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:17px/1.75 system-ui,-apple-system,"Segoe UI",sans-serif}a{color:var(--teal);text-underline-offset:4px;overflow-wrap:anywhere}a:hover{text-decoration-thickness:2px}a:focus-visible{outline:3px solid #337d77;outline-offset:5px;border-radius:3px}.wrap{max-width:1080px;margin:auto;padding:0 28px}header{border-bottom:1px solid var(--line)}nav{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:92px}.brand{font-weight:750;letter-spacing:-.5px;text-decoration:none;color:var(--ink);font-size:21px}.navlinks{display:flex;gap:24px;font-size:15px}.navlinks a{text-decoration:none}main{max-width:820px;margin:auto;padding:60px 28px 80px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:750;color:var(--teal)}h1{font-size:clamp(38px,6vw,56px);line-height:1.1;letter-spacing:-1.7px;margin:18px 0 16px}h2{font-size:23px;line-height:1.35;margin:38px 0 12px;letter-spacing:-.4px}p{margin:0 0 18px}.date{font-size:14px;color:var(--muted)}.lead{font-size:19px;color:var(--muted);margin:25px 0}.summary{padding:22px 25px;background:#e2eee6;border-left:3px solid #6b9b89;border-radius:0 12px 12px 0}.summary p{margin:0}ul,ol{padding-left:25px}li{padding:3px 0}code{font-size:.85em;background:#e8eee8;padding:2px 5px;border-radius:4px;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse;font-size:15px;margin:18px 0 24px}th,td{text-align:left;padding:13px 14px;border:1px solid var(--line);vertical-align:top}th{background:#e4eee7}td{background:#fff}th:first-child{width:40%}.policy-links{font-size:15px}footer{border-top:1px solid var(--line);padding:24px 0 32px;font-size:13px;color:var(--muted)}footer .wrap{display:flex;gap:24px;justify-content:space-between}.skip{position:absolute;left:-999px}.skip:focus{left:20px;top:20px;background:white;padding:8px;z-index:2}@media(max-width:640px){nav{min-height:80px;align-items:flex-start;padding:22px 0;flex-direction:column;gap:8px}.wrap{padding:0 22px}main{padding:40px 22px 55px}.navlinks{gap:20px}th,td{padding:10px}footer .wrap{flex-direction:column;gap:8px}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header><nav class="wrap" aria-label="Main navigation"><a class="brand" href="./">MoodShift Analytics</a><div class="navlinks"><a href="./">Home</a><a href="mailto:moodshiftsoundscapes@gmail.com">Contact</a></div></nav></header>
+<main id="main">
+<span class="eyebrow">Your data &amp; the local workflow</span><h1>Privacy policy</h1><p class="date">Effective date: October 9, 2026</p>
+<p class="lead">This policy describes MoodShift Analytics, a personal, owner-only tool for collecting YouTube channel analytics on the owner’s computer and using those reports for content planning.</p>
+<div class="summary"><p>The collector retrieves data from Google and saves it locally. This informational website does not host a sign-in, accept uploads, or receive the owner’s channel analytics.</p></div>
+
+<h2>1. Who operates the tool</h2>
+<p>MoodShift Analytics is maintained for the personal use of the MoodShift channel owner. Privacy and support questions can be sent to <a href="mailto:moodshiftsoundscapes@gmail.com">moodshiftsoundscapes@gmail.com</a>.</p>
+
+<h2>2. Data accessed and collected</h2>
+<p>After the owner authorizes access, the collector uses YouTube API Services to retrieve information for the selected channel:</p>
+<ul><li>Channel identifiers and title, and video identifiers, titles, publication dates, durations, thumbnail URLs, privacy status, and live-broadcast status.</li><li>Aggregate daily reports, where available, containing views, engaged views, watch time, thumbnail impressions, click-through rate, traffic sources, subscriber gains and losses, and other aggregate engagement measures.</li><li>Available report dimensions, such as date, country, subscription status, playback type, traffic-source detail, device type, and operating system. Original CSV reports may contain more dimensions and metrics than the simplified daily files.</li><li>Local collection status, report identifiers and dates, configuration, and diagnostic messages needed to keep collection working.</li></ul>
+<p>The separate data-preparation tool also maintains editable creative labels and notes, such as scene theme, rain intensity, sound mix, brightness, viewpoint, technical issues, and thumbnail version. Suggested themes are inferred locally from video titles.</p>
+<p>The collector does not request individual viewer identities or retrieve the text of viewer comments. Comment and engagement counts may appear in aggregate reports.</p>
+
+<h2>3. Google authorization and permissions</h2>
+<p>Google handles account sign-in and permission approval in the owner’s browser. The collector uses a temporary loopback callback on the owner’s computer to complete OAuth authorization. It does not receive or store the owner’s Google password.</p>
+<table><thead><tr><th scope="col">Permission</th><th scope="col">Purpose</th></tr></thead><tbody><tr><td><code>youtube.readonly</code></td><td>Read the selected channel and its video metadata.</td></tr><tr><td><code>yt-analytics.readonly</code></td><td>Read non-monetary channel analytics and create reporting jobs used to download aggregate reports.</td></tr></tbody></table>
+<p>The full scope URLs begin with <code>https://www.googleapis.com/auth/</code>. These permissions do not allow the collector to upload videos, change video titles or thumbnails, or manage comments. The tool does not request monetary analytics access.</p>
+
+<h2>4. How the data is used</h2>
+<p>Data is used to maintain a local analytics history, compare video and theme performance, identify missing or revised reports, and support the owner’s decisions about future videos. Reporting jobs are created on Google’s service; downloaded reports and local analysis files remain on the owner’s computer unless the owner chooses to share them.</p>
+<p>Google API data use and transfer follow the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including its Limited Use requirements.</p>
+<p>The tool does not sell analytics data, use it for advertising, or send it to train general-purpose AI models. It does not automatically share analytics with ChatGPT or another analysis service.</p>
+
+<h2>5. Local storage and security</h2>
+<p>The collector stores original downloaded reports in <code>raw/</code>, prepared data and status files in <code>data/</code>, the report manifest and lock in <code>state/</code>, diagnostic logs in <code>logs/</code>, and channel and job settings in <code>config.json</code>. The preparation tool saves requested export archives in <code>exports/</code>.</p>
+<p>OAuth access and refresh tokens are stored in <code>private/token.json</code>. The downloaded OAuth client configuration is supplied as <code>client_secret.json</code> in the collector folder or in <code>private/</code>. Refresh tokens let scheduled collection run without repeated browser sign-in.</p>
+<p>These are local files. The collector does not encrypt them; their protection depends on access to the owner’s computer, operating-system account permissions, and any disk encryption or backup protection the owner enables. Logs are designed to omit credentials, authorization URLs, and report download URLs. Keep the collector folder and its credentials out of public repositories and public file shares.</p>
+
+<h2>6. Exports and sharing chosen by the owner</h2>
+<p>The owner can manually create an analysis ZIP containing selected prepared CSVs and status information. The export tool excludes OAuth tokens, client credentials, configuration, logs, and raw report downloads. The included files can still contain channel and video identifiers, video metadata, private channel analytics, and any creative notes entered by the owner.</p>
+<p>Creating the ZIP does not upload it. If the owner shares it with ChatGPT, another provider, or another person, that recipient’s policies and the owner’s selected account settings govern the recipient’s subsequent handling. Review the export before sharing it. MoodShift Analytics does not control copies held by a chosen recipient.</p>
+
+<h2>7. Retention, revocation, and deletion</h2>
+<p>Local reports, tokens, settings, logs, labels, and exports remain until the owner deletes them. The collector has no automatic retention purge; some current metadata and prepared files are replaced during collection, while raw reports and existing export archives can remain.</p>
+<p>To stop access and remove local copies:</p>
+<ol><li>Disable or delete the MoodShift Analytics task in Windows Task Scheduler so collection does not continue.</li><li>Revoke the app’s Google access through <a href="https://myaccount.google.com/connections">Google Account connections</a>. Google may show the OAuth app name configured by the owner.</li><li>Delete the collector’s credentials, local data, reports, settings, logs, and export files. Remove any additional copies from backups, synchronized folders, and other locations as appropriate.</li><li>If an export was shared, use the recipient’s controls or contact that recipient to request deletion of their copy.</li></ol>
+<p>Revoking access does not itself erase local files, change or delete YouTube videos, or delete reporting jobs and reports held by Google. The collector does not offer a Google reporting-job deletion command. Google-hosted information remains subject to Google’s own controls and retention practices.</p>
+
+<h2>8. This public website</h2>
+<p>This site is a static informational website hosted with GitHub Pages. It contains no application analytics, advertising scripts, tracking pixels, or file-upload form. It does not use application cookies or external fonts.</p>
+<p>GitHub may collect technical information, including IP addresses and request information, when serving the site, as described in the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub General Privacy Statement</a>. Following a link to Google, YouTube, or another site is subject to that site’s policies. If you contact the support email, the email and information you provide are used to respond to your request.</p>
+
+<h2>9. Google and YouTube policies</h2>
+<p>MoodShift Analytics uses YouTube API Services. Use of those services is also subject to the <a href="https://www.youtube.com/t/terms">YouTube Terms of Service</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+
+<h2>10. Updates and contact</h2>
+<p>This policy may be updated if the local tool or its handling of data changes. The effective date above identifies this version. For privacy questions, contact <a href="mailto:moodshiftsoundscapes@gmail.com">moodshiftsoundscapes@gmail.com</a>.</p>
+</main>
+<footer><div class="wrap"><span>MoodShift Analytics · Personal YouTube analytics</span><a href="./">Return to home</a></div></footer>
+</body>
+</html>
